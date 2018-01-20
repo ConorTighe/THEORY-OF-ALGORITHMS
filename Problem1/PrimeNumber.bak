@@ -1,0 +1,11 @@
+# lang racket
+
+(define i 2)
+
+(define (CheckPrime n)
+  (for (2*i<n)
+   (define i (+ i 1))
+    if(= (% n i) 0)
+        #t
+    if(not (% n i) 0)
+        #f
