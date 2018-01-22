@@ -9,11 +9,15 @@ The platform provides an implementation of the Racket language (including a soph
 
 The platform distribution is free and open-source software distributed under the GNU Lesser General Public License (LGPL) license. Extensions and packages written by the community are uploaded to Racket's centralized package catalog.
 
+DrRacket Logo:
+![logo](racketlogo.png "DrRacket")
+
+# Module Problems:
+Here are all the problems ive been assigned by my lecturer Ian, I have sorted the racker program files and documentation into folders to make each problem answer easier to read and navigate. The folders for each answer to the probelems presented can be seen above in the repo.
+
 ### Problem 1:
 Write, from scratch, a function in Racket that uses a brute-force algorithm that takes
 a single positive integer and return true if the number is a prime and false otherwise.
 Call the function decide-prime.
 
-### Solution:
-I wrote my first Racket program with the filename 'PrimeNumber' which can be found in the 'Problem1' folder above along with a README explaining the process carried out to identify if the number is a prime or not.
 
