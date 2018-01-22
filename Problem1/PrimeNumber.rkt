@@ -17,6 +17,6 @@
 ;(decide-prime? 101); should return #t
 
 ; Brute force check for numbers 2-101
-(for [(m (in-range 2 102))] ; For/List for checking each number
+(for [(m (in-range i 102))] ; For/List for checking each number
   (display "\n")(display m)(display " Results: ")
   (display (decide-prime? m))) ; pass current number to fucntion
