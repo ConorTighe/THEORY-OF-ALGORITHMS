@@ -9,9 +9,6 @@ Call the function decide-prime.
 # Solution:
 The working solution to this project can be found in the PrimeNumber file, you can open this in DrRacket and run the program.
 
-To download the soultion navigate to a folder in the cmd, type git clone and paste in the following url:
-'https://github.com/ConorTighe1995/THEORY-OF-ALGORITHMS.git'
-
 ## Whats a prime number?
 A prime number is a whole number greater than 1 whose only factors are 1 and itself. A factor is a whole numbers that can be divided evenly into another number. The first few prime numbers are 2,3,5,7,11,13,17,19,23,29 and 37.
 

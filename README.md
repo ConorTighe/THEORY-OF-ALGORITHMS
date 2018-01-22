@@ -9,8 +9,15 @@ The platform provides an implementation of the Racket language (including a soph
 
 The platform distribution is free and open-source software distributed under the GNU Lesser General Public License (LGPL) license. Extensions and packages written by the community are uploaded to Racket's centralized package catalog.
 
-DrRacket Logo:
 ![logo](racketlogo.png "DrRacket")
+
+## Getting started
+
+- Install git 'https://git-scm.com/downloads'
+- Download racket: 'https://download.racket-lang.org/'
+
+To download the soultions to these problems navigate to a folder in the cmd, type git clone and paste in the following url:
+'https://github.com/ConorTighe1995/THEORY-OF-ALGORITHMS.git'
 
 # Module Problems:
 Here are all the problems ive been assigned by my lecturer Ian, I have sorted the racker program files and documentation into folders to make each problem answer easier to read and navigate. The folders for each answer to the probelems presented can be seen above in the repo.
