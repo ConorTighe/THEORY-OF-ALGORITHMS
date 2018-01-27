@@ -21,7 +21,7 @@ When I originally seen this question I went to investigate answers in other lang
 Now after seeing it done in a language ive used before I started to read documentation on the basics of racket so I could take a more procedural approuch to checking for a prime. To create a function in racket you use the define keyword '(define id expr)'. We can allow our function to recieve a value with the following '(define (decide-prime? n)'. for/or is used to loop through the numbers smaller than the n number given and if one of these smaller numbers succefully divide with n then the loop returns and tells us that its not a prime, but if i successfully loop though all the possible numbers for n without dividing then the list will return true. At the end of each loop I use the remainder function to see if the division results in a 0.
 
 ## Testing:
-I give the function some test values that I know are primes or not primes. The results show the function work, I commented out the tests but left them in the program.
+I give the function some test values that I know are primes or not primes. The results show the function works, I commented out the tests but left them in the program.
 
 ## Brute Force Check:
 At the bottem of the program I then do a brute force check of all the numbers from 2-101 using a normal racket for loop.
