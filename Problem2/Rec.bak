@@ -1,0 +1,8 @@
+#lang racket
+
+(define (Check? n)
+   (append(cond [(= n 1) 1]
+         ((odd? n) (Check? ( + (* n 3) 1)))
+         (else (Check? (+ n 1))))))
+
+(Check? 5)
