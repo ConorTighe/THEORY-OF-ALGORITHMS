@@ -34,6 +34,6 @@ At first I tried some fucntions for removing the last element in the list I foun
 I found this problem confusing at first as math is not my strongest point so it took me afew minutes to find out what the equation was asking for, but once I actually started implmenting this in code I found that this was an easier problem then problem one and it also led me to learn about the extremly handy mathmatical functions racket offers like odd? eve? and more.
 
 # Program Output:
-![results](Problem2/prob2.png "output")
+![results](THEORY-OF-ALGORITHMS/Problem2/prob2.png "output")
 
 c#Refrences
