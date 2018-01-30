@@ -22,9 +22,32 @@ To download the soultions to these problems navigate to a folder in the cmd, typ
 # Module Problems:
 Here are all the problems ive been assigned by my lecturer Ian, I have sorted the racker program files and documentation into folders to make each problem answer easier to read and navigate. The folders for each answer to the probelems presented can be seen above in the repo.
 
+---
+
 ### Problem 1:
 Write, from scratch, a function in Racket that uses a brute-force algorithm that takes
 a single positive integer and return true if the number is a prime and false otherwise.
 Call the function decide-prime.
 
+---
 
+### Problem 2:
+Write, from scratch, a function in Racket that takes a positive integer n0 as input
+and returns a list by recursively applying the following operation, starting with the
+input number.
+
+![Function logic](equation.png "Function logic")
+
+End the recursion when (or if) the number becomes 1. Call the function collatz-list.
+So, collatz-list should return a list whose first element is n0, the second element
+is n1, and so on.
+
+---
+
+## References for all the problems:
+
+-[DrRacket](https://racket-lang.org/)
+
+-[Racket docs](https://docs.racket-lang.org/)
+
+-[Racket (programming language)](https://en.wikipedia.org/wiki/Racket_(programming_language))
