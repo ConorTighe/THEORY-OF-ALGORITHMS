@@ -1,5 +1,4 @@
 #lang racket
-(require srfi/1)
 
 (display "Problem 2 - THEORY OF ALGORITHMS - G00314417 \n")
 
