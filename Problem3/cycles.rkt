@@ -1,0 +1,25 @@
+#lang racket
+
+(define (lcycle LIST); Pass list in function signiture 
+  (if (null? LIST); Check if LIST null
+      '()
+      (append (cdr LIST) ; return second elemtent in list and join to below
+              (cons (car LIST); gets start of list check if its valid and then joins to end
+                    '()))))
+
+(define (remove-last lst)
+    (if (null? (cdr lst))
+        '()
+        (cons (car lst) (remove-last (cdr lst)))))
+
+(define (rcycle LIST); Pass list in function signiture 
+  (if (null? LIST); Check if LIST null
+      '()
+      (append (cons (last LIST)) ; return second elemtent in list and join to below
+              (cons (remove-last LIST); gets start of list check if its valid and then joins to end
+                    '()))))
+
+
+(lcycle (list 1 2 3 4 5))
+
+(rcycle (list 1 2 3 4 5))

@@ -20,7 +20,7 @@ To download the soultions to these problems navigate to a folder in the cmd, typ
 'https://github.com/ConorTighe1995/THEORY-OF-ALGORITHMS.git'
 
 # Module Problems:
-Here are all the problems ive been assigned by my lecturer Ian, I have sorted the racker program files and documentation into folders to make each problem answer easier to read and navigate. The folders for each answer to the probelems presented can be seen above in the repo.
+Here are all the problems ive been assigned by my lecturer Ian, I have sorted the racket program files and documentation into folders to make each problem answer easier to read and navigate. The folders for each answer to the probelems presented can be seen above in the repo.
 
 ---
 
