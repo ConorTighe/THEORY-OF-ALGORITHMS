@@ -44,6 +44,13 @@ is n1, and so on.
 
 ---
 
+### Problem 3:
+Write, from scratch, two functions in Racket. The first is called lcycle. It takes a
+list as input and returns the list cyclically shifted one place to the left. The second
+is called rcycle, and it shifts the list cyclically shifted one place to the right.
+
+---
+
 ## References for all the problems:
 
 -[DrRacket](https://racket-lang.org/)
