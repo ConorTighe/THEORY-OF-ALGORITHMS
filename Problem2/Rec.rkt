@@ -3,7 +3,7 @@
 (display "Problem 2 - THEORY OF ALGORITHMS - G00314417 \n")
 
 (define (collatz-list? n); Set function signiture
-  (cons n(cond ((= n 1) 1); Check if n = 1 
+  (cons n(cond ((= n 1)); Check if n = 1 
         ((odd? n) (collatz-list? ( + (* n 3) 1))); if odd multiply by 3 and add 1, continue recursion
         (else (collatz-list? (/ n 2)))))); else divide by 2 and continue recursion
 

@@ -28,10 +28,13 @@ After studying the equation I looked online to find the most efficient way of so
 I ran the function afew times within DrRacket and got the same results as shown in the problem sheet. The only differece is my list produces a "." and a "1" at the end of the list after the answer, although this is insignificant Im currently looking for a way to remove this from the program that does not disrupt the logic or output.
 
 ## Bug solution
-At first I tried some fucntions for removing the last element in the list I found on stack overflow, none of these worked with the function I created so I tried using the library `(require srfi/1)` as it has a drop-right function I could use. After applying this I found out that the `1.1` was actually one whole element and not 3, meaning the next best thing to would be turn the last value from a decimal to a whole number. Im currently looking into way to do this with the list.
+At first I tried some fucntions for removing the last element in the list I found on stack overflow, none of these worked with the function I created so I tried using the library `(require srfi/1)` as it has a drop-right function I could use. After applying this I found out that the `1.1` was actually one whole element and not 3, meaning the next best thing to would be turn the last value from a decimal to a whole number. After editing the program and playing around with the output the best solution I could find is have the results print out and then output #t once the fucntion is complate.
 
 ## Conclusion
 I found this problem confusing at first as math is not my strongest point so it took me afew minutes to find out what the equation was asking for, but once I actually started implmenting this in code I found that this was an easier problem then problem one and it also led me to learn about the extremly handy mathmatical functions racket offers like odd? eve? and more.
 
 # Program Output:
 ![results](prob2.png "output")
+
+# Bug Solution Output:
+![results](prob2sol.png "output")
