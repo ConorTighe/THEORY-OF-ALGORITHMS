@@ -51,6 +51,13 @@ is called rcycle, and it shifts the list cyclically shifted one place to the rig
 
 ---
 
+### Problem 4:
+Write a function sublsum in Racket that takes a list (of integers) as input and returns a list of sublists of it that sum to zero.
+For this problem, you can use the combinations built-in function. Note the order of the 
+sublists and their elements doesn’t matter.
+
+---
+
 ## References for all the problems:
 
 -[DrRacket](https://racket-lang.org/)

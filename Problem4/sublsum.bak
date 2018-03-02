@@ -1,0 +1,20 @@
+#lang racket
+
+(define (sublsum? lst); Fucntion signiture, call it sublsum
+  (zero? (apply + lst))); calculate sum of list and check if its 0
+
+(display "Problem sheet list: \n")
+(display (list 1 2 -3 4 5))
+
+; filter results of sublsum, use cdr to skip first null result.
+(filter sublsum? (cdr (combinations '(1 2 3 4 -5))));combinations to check all powersets
+
+(define newList (list 1 2 -3 4 5)) ; create random list of values from problem sheet
+(display "New list: \n")
+(display newList)
+(filter sublsum? (cdr (combinations newList)))
+
+(define newList2 (list -1 2 3 4 5))
+(display "Another new list 2: \n")
+(display newList2)
+(filter sublsum? (cdr (combinations newList2)))
