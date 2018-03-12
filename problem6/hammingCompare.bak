@@ -1,0 +1,18 @@
+#lang racket
+
+(display "Problem 5 - THEORY OF ALGORITHMS - G00314417 \n")
+
+(define (hammingCompare? 1st 2nd)
+  (if(null? 1st); Check if first list is empty
+   0
+  (if(null? 2nd); Check if second list is empty
+   0
+  (if(= (car 1st) (car 2nd));check if last elements are equal
+    (hammingCompare? (cdr 1st) (cdr 2nd)); continue recursion if they are
+       (+ 1 (hammingCompare? (cdr 1st) (cdr 2nd))); add one, apply hamingCompare to second 
+        ))))
+
+(define example1 (list 1 0 1 0 1 1 1 0)) ; Create first list from problem sheet
+(define example2 (list 1 1 1 1 0 0 0 0)) ; create second list from problem sheet
+
+(hammingCompare? example1 example2) ; pass lists to our function

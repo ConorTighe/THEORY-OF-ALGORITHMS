@@ -65,3 +65,5 @@ sublists and their elements doesn’t matter.
 -[Racket docs](https://docs.racket-lang.org/)
 
 -[Racket (programming language)](https://en.wikipedia.org/wiki/Racket_(programming_language))
+
+-[Problem 5 refrence](https://stackoverflow.com/questions/21595624/returning-number-of-times-atoms-in-one-list-appear-in-another-list)
