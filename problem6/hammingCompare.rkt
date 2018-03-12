@@ -15,4 +15,8 @@
 (define example1 (list 1 0 1 0 1 1 1 0)) ; Create first list from problem sheet
 (define example2 (list 1 1 1 1 0 0 0 0)) ; create second list from problem sheet
 
+(display example1); diplay list 1
+(display "\n")
+(display example2); display list 2
+(display "\nPositions in which they differ:\n")
 (hammingCompare? example1 example2) ; pass lists to our function
