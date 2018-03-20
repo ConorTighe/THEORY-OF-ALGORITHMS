@@ -67,3 +67,7 @@ sublists and their elements doesn’t matter.
 -[Racket (programming language)](https://en.wikipedia.org/wiki/Racket_(programming_language))
 
 -[Problem 5 reference](https://stackoverflow.com/questions/21595624/returning-number-of-times-atoms-in-one-list-appear-in-another-list)
+
+-[Hamming weight](https://en.wikipedia.org/wiki/Hamming_weight)
+
+-[Hamming distance](https://en.wikipedia.org/wiki/Hamming_distance)

@@ -5,6 +5,9 @@ Answers to problems presented in the THEORY OF ALGORITHMS module.
 Write a function hamming-weight in Racket that takes a list l as input and returns
 the number of non-zero elements in it.
 
+## What is hamming weight?
+In computer science the process described in the problem above is known as finding the hamming weight. The Hamming weight of a string is the number of symbols that are different from the zero-symbol of the alphabet used. It is thus equivalent to the Hamming distance from the all-zero string of the same length.
+
 # Solution:
 The working solution to this project can be found in the hammingCount.rkt file, you can open this in DrRacket and run the program.
 
