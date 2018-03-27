@@ -1,0 +1,13 @@
+#lang racket
+
+(define (sod2 x y z ) ; function signiture
+  (if (null? x)(null? y)(null? z)) ;check if x y z are empty
+      '() ; return null if so
+      (if (not (= (length x)(length y)(length z))) ; check if lists x y z are not equal
+          '() ; return null if they arnt
+          (map (lambda (x y z); Map x y and z list, pass lists with lambda
+                 (if (odd? (+ x y z) ) 1 0)) x y z))) ; sum x y and z elements, if result is odd place a 1 in the corrisponding element position of created list, else place a 0, then return list
+
+; Pass in 3 lists containing only 1's and 0's
+(sod2 (list 0 0 0 0 1 1 1 1) (list 0 0 1 1 0 0 1 1) (list 0 1 0 1 0 1 0 1)) ; Expected result: '(0 1 1 0 1 0 0 1)
+(sod2 (list 1 0 0 0 1 0 0 1) (list 1 0 1 1 1 0 1 1) (list 1 0 0 1 1 1 0 1)) ; Expected result: '(1 0 1 0 1 1 1 1)
