@@ -3,7 +3,9 @@
 (define (maj? 1st 2nd 3rd)
   (if (for/or ([t (list 1st 2nd 3rd)]) (null? t)) ; check if passed lists are empty
       null ; if so return null
-      (maj?-check 1st 2nd 3rd))) ; else pass to maj-check to compare elements
+      (if (not (= (length 1st)(length 2nd)(length 3rd))); check if lists are NOT equal length
+          (display "ERROR: Lists NOT of equal length!") ;throw error message if they arnt
+          (maj?-check 1st 2nd 3rd)))) ; else pass to maj-check to compare elements
 
 (define (maj?-check 1st 2nd 3rd)
   (define check-for-zero ; define recursion starting point

@@ -1,73 +1,24 @@
 # THEORY-OF-ALGORITHMS
 Answers to problems presented in the THEORY OF ALGORITHMS module.
 
-## Racket programming language
-Racket (formerly PLT Scheme) is a general purpose, multi-paradigm programming language in the Lisp-Scheme family. One of its design goals is to serve as a platform for language creation, design, and implementation. The language is used in a variety of contexts such as scripting, general-purpose programming, computer science education, and research.The syntax is uniform and made of s-expressions. An s-expression is an atom or a sequence of atoms separated by spaces and enclosed in parenthesis. Square brackets [] and braces {} can be used instead of parenthesis (as long as they match per type).
+### Problem 7:
+Write a function chse in Racket that takes three lists x, y and z of equal length and
+containing only 0’s and 1’s. It should return a list containing the elements of y in
+the positions where x is 1 and the elements of z otherwise.
 
-## Programming enviroment - DrRacket:
-The platform provides an implementation of the Racket language (including a sophisticated run-time system, various libraries, JIT compiler, and more) along with a development environment called DrRacket (formerly named DrScheme) written in Racket itself. The IDE and an accompanying programming curriculum is used in the ProgramByDesign outreach program, an attempt to turn computing and programming into "an indispensable part of the liberal arts curriculum". The core language is known for its extensive macro system which enables the creation of embedded and domain-specific languages, language constructs such as classes or modules, and separate dialects of Racket with different semantics.
+# Solution:
+The working solution to this project can be found in the maj.rkt file, you can open this in DrRacket and run the program.
 
-The platform distribution is free and open-source software distributed under the GNU Lesser General Public License (LGPL) license. Extensions and packages written by the community are uploaded to Racket's centralized package catalog.
+# Program Overview:
 
-![logo](racketlogo.png "DrRacket")
+## Design
+In this problem I decided to try seperate the computing of the lists and the error handling, maj checks for null values and compares the length of each list to see if the match in length. The maj-check funtion is seperated into 2 parts. The function defined inside called check-for-zero sums the elments and checks if the result is 0, if so return a 0. Any other result will return a 1. Then the maj-check funtion uses this operation in a recursive manner on each of the lists corrisponding element location and adds the results to a new list, once the recursion is complete we return the results to the user.
 
-## Getting started
+## Testing
+I used the 3 lists from the problem sheet to see if I got the same results as the example. The results returned '(0 0 0 1 0 1 1 1)' like in the example. I also set up my own test lists and got a expected result of '(0 0 0 1 1 1 0 1)'.
 
-- Install git 'https://git-scm.com/downloads'
-- Download racket: 'https://download.racket-lang.org/'
+## Conclusion
+This approach of separating the error handling made the code more readable and easier to document. I seen the map function after trying this summing approach and acknowledge that this code could be refactored down to produce less code per line and maybe speed up the process of identifying the majority 1's or 0's.
 
-To download the soultions to these problems navigate to a folder in the cmd, type git clone and paste in the following url:
-'https://github.com/ConorTighe1995/THEORY-OF-ALGORITHMS.git'
-
-# Module Problems:
-Here are all the problems ive been assigned by my lecturer Ian, I have sorted the racket program files and documentation into folders to make each problem answer easier to read and navigate. The folders for each answer to the probelems presented can be seen above in the repo.
-
----
-
-### Problem 1:
-Write, from scratch, a function in Racket that uses a brute-force algorithm that takes
-a single positive integer and return true if the number is a prime and false otherwise.
-Call the function decide-prime.
-
----
-
-### Problem 2:
-Write, from scratch, a function in Racket that takes a positive integer n0 as input
-and returns a list by recursively applying the following operation, starting with the
-input number.
-
-![Function logic](equation.png "Function logic")
-
-End the recursion when (or if) the number becomes 1. Call the function collatz-list.
-So, collatz-list should return a list whose first element is n0, the second element
-is n1, and so on.
-
----
-
-### Problem 3:
-Write, from scratch, two functions in Racket. The first is called lcycle. It takes a
-list as input and returns the list cyclically shifted one place to the left. The second
-is called rcycle, and it shifts the list cyclically shifted one place to the right.
-
----
-
-### Problem 4:
-Write a function sublsum in Racket that takes a list (of integers) as input and returns a list of sublists of it that sum to zero.
-For this problem, you can use the combinations built-in function. Note the order of the 
-sublists and their elements doesn’t matter.
-
----
-
-## References for all the problems:
-
--[DrRacket](https://racket-lang.org/)
-
--[Racket docs](https://docs.racket-lang.org/)
-
--[Racket (programming language)](https://en.wikipedia.org/wiki/Racket_(programming_language))
-
--[Problem 5 reference](https://stackoverflow.com/questions/21595624/returning-number-of-times-atoms-in-one-list-appear-in-another-list)
-
--[Hamming weight](https://en.wikipedia.org/wiki/Hamming_weight)
-
--[Hamming distance](https://en.wikipedia.org/wiki/Hamming_distance)
+# Program Output:
+![results](prob7.png "output")
