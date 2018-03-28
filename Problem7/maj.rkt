@@ -1,5 +1,7 @@
 #lang racket
 
+(display "\nProblem 7 - Maj - G00314417\n")
+
 (define (maj? 1st 2nd 3rd)
   (if (for/or ([t (list 1st 2nd 3rd)]) (null? t)) ; check if passed lists are empty
       null ; if so return null

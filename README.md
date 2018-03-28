@@ -58,6 +58,47 @@ sublists and their elements doesn’t matter.
 
 ---
 
+### Problem 5:
+Write a function hamming-weight in Racket that takes a list l as input and returns
+the number of non-zero elements in it.
+
+---
+
+### Problem 6:
+Write a function hamming-distance in Racket that takes two lists and returns the
+number of positions in which they differ.
+
+---
+
+### Problem 7:
+Write a function maj in Racket that takes three lists x, y and z of equal length and
+containing only 0’s and 1’s. It should return a list containing a 1 where two or more
+of x, y and z contain 1’s, and 0 otherwise.
+
+---
+
+### Problem 8:
+Write a function chse in Racket that takes three lists x, y and z of equal length and
+containing only 0’s and 1’s. It should return a list containing the elements of y in
+the positions where x is 1 and the elements of z otherwise.
+
+---
+
+### Problem 9:
+Write a function sod2 in Racket that takes three lists x, y and z of equal length and
+containing only 0’s and 1’s. It should return a list containing a 1 where the number of
+1’s in a given position in x, y and z contains an odd nubmer of 1’s, and 0 otherwise.
+
+---
+
+### Problem 10:
+Write a function lstq in Racket that takes as arguments two lists l and m of equal
+length and containing numbers. It should return d, the distance given by the sum of
+the square residuals between the numbers in the lists:
+
+![Function logic](dequation.png "Function logic")
+---
+
 ## References for all the problems:
 
 -[DrRacket](https://racket-lang.org/)
